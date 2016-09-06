@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Lead页面 -->
+    <string name="lead_skiptext">直接跳过</string>
+    <string name="leadimage_description">Guide page image</string>
+    <string name="leadtext_description1">Small icon 1</string>
+    <string name="leadtext_description2">Small icon 2</string>
+    <string name="leadtext_description3">Small icon 1</string>
+    <string name="app_name">HouseKeeperApplication</string>
+
+    <string name="setting_autostart">开机启动</string>
+    <string name="setting_notifmsg">通知图标</string>
+    <string name="setting_pushmsg">消息推送</string>
+    <string name="setting_help">帮助说明</string>
+    <string name="setting_study">意见反溃</string>
+    <string name="setting_share">好友分享</string>
+    <string name="setting_clear">清理缓冲</string>
+    <string name="setting_update">版本更新</string>
+    <string name="setting_about">关于我们</string>
+    <string name="title_activity_speedup">SpeedupActivity</string>
+
+    <string name="space_phone">手机内置空间</string>
+    <string name="out_space_phone">手机外置空间</string>
+    <string name="all_soft">所有软件</string>
+    <string name="utility_soft">应用软件</string>
+    <string name="system_soft">系统软件</string>
+
+    <string name="process_show_sysapp">系统进程</string>
+    <string name="process_show_useapp">用户进程</string>
+
+    <string name="filetype_all">全部</string>
+    <string name="filetype_txt">文档</string>
+    <string name="filetype_image">图像</string>
+    <string name="filetype_audio">音频</string>
+    <string name="filetype_video">视频</string>
+    <string name="filetype_zip">压缩包</string>
+    <string name="filetype_apk">程序包</string>
+    <string name="title_activity_showapp">ShowappActivity</string>
+    <string name="title_activity_phonemgr">PhonemgrActivity</string>
+    <string name="title_activity_telmgr">TelmgrActivity</string>
+    <string name="title_activity_telshow">TelshowActivity</string>
+    <string name="title_activity_filemgr">FilemgrActivity</string>
+    <string name="title_activity_filemgr_show">FilemgrShowActivity</string>
+    <string name="title_activity_kuaidi">KuaidiActivity</string>
+    <string name="title_activity_clear">ClearActivity</string>
+</resources>

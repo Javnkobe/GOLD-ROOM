@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.FileMgrActivity">
+
+    <include layout="@layout/layout_toolbar"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="120dp"
+        android:orientation="horizontal"
+        android:background="@color/mycolorAccent"
+        android:gravity="center"
+        android:padding="20dp"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_find"
+            android:text="已发现"
+            android:textSize="12sp"
+            android:layout_centerVertical="true"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_total_file"
+            android:text="200.00M"
+            android:textSize="28sp"
+            android:layout_toRightOf="@id/tv_find"
+            android:layout_alignBottom="@id/tv_find"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:id="@+id/rl_allfile"
+                style="@style/FileMgr">
+                <TextView
+                    android:id="@+id/tv_allfile"
+                    android:text="@string/filetype_all"
+                    style="@style/FileType" />
+                <TextView
+                    android:id="@+id/tv_allfile_size"
+                    android:text="200M"
+                    android:layout_alignBottom="@+id/tv_allfile"
+                    android:layout_toRightOf="@id/tv_allfile"
+                    style="@style/FileSize"/>
+                <ImageView
+                    android:id="@+id/iv_all"
+                    style="@style/FileImg" />
+                <ProgressBar
+                    android:id="@+id/pb_allfile"
+                    android:visibility="gone"
+                    style="@style/FileProgress" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/horizontal_line"/>
+            <RelativeLayout
+                android:id="@+id/rl_alltxt"
+                style="@style/FileMgr">
+                <TextView
+                    android:id="@+id/tv_txt"
+                    android:text="@string/filetype_txt"
+                    style="@style/FileType" />
+                <TextView
+                    android:id="@+id/tv_txt_size"
+                    android:text="200M"
+                    android:layout_alignBottom="@+id/tv_txt"
+                    android:layout_toRightOf="@id/tv_txt"
+                    style="@style/FileSize"/>
+                <ImageView
+                    android:id="@+id/iv_txt"
+                    style="@style/FileImg"
+                    android:visibility="gone"/>
+                <ProgressBar
+                    android:id="@+id/pb_txt"
+                    style="@style/FileProgress" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/horizontal_line"/>
+            <RelativeLayout
+                android:id="@+id/rl_allvideo"
+                style="@style/FileMgr">
+            <TextView
+                android:id="@+id/tv_video"
+                android:text="@string/filetype_video"
+                style="@style/FileType" />
+            <TextView
+                android:id="@+id/tv_video_size"
+                android:text="200M"
+                android:layout_alignBottom="@+id/tv_video"
+                android:layout_toRightOf="@id/tv_video"
+                style="@style/FileSize"/>
+            <ImageView
+                android:id="@+id/iv_video"
+                style="@style/FileImg"
+                android:visibility="gone"/>
+            <ProgressBar
+                android:id="@+id/pb_video"
+                style="@style/FileProgress" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/horizontal_line"/>
+            <RelativeLayout
+                android:id="@+id/rl_allaudio"
+                style="@style/FileMgr">
+                <TextView
+                    android:id="@+id/tv_audiofile"
+                    android:text="@string/filetype_audio"
+                    style="@style/FileType" />
+                <TextView
+                    android:id="@+id/tv_audio_size"
+                    android:text="200M"
+                    android:layout_alignBottom="@+id/tv_audiofile"
+                    android:layout_toRightOf="@id/tv_audiofile"
+                    style="@style/FileSize"/>
+                <ImageView
+                    android:id="@+id/iv_audio"
+                    style="@style/FileImg"
+                    android:visibility="gone"/>
+                <ProgressBar
+                    android:id="@+id/pb_audio"
+                    style="@style/FileProgress" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/horizontal_line"/>
+            <RelativeLayout
+                android:id="@+id/rl_allimage"
+                style="@style/FileMgr">
+                <TextView
+                    android:id="@+id/tv_imagefile"
+                    android:text="@string/filetype_image"
+                    style="@style/FileType" />
+                <TextView
+                    android:id="@+id/tv_image_size"
+                    android:text="200M"
+                    android:layout_alignBottom="@+id/tv_imagefile"
+                    android:layout_toRightOf="@id/tv_imagefile"
+                    style="@style/FileSize"/>
+                <ImageView
+                    android:id="@+id/iv_image"
+                    style="@style/FileImg"
+                    android:visibility="gone"/>
+                <ProgressBar
+                    android:id="@+id/pb_image"
+                    style="@style/FileProgress" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/horizontal_line"/>
+            <RelativeLayout
+                android:id="@+id/rl_allapk"
+                style="@style/FileMgr">
+                <TextView
+                    android:id="@+id/tv_apk"
+                    android:text="@string/filetype_apk"
+                    style="@style/FileType" />
+                <TextView
+                    android:id="@+id/tv_apk_size"
+                    android:text="200M"
+                    android:layout_alignBottom="@+id/tv_apk"
+                    android:layout_toRightOf="@id/tv_apk"
+                    style="@style/FileSize"/>
+                <ImageView
+                    android:id="@+id/iv_apk"
+                    style="@style/FileImg"
+                    android:visibility="gone" />
+                <ProgressBar
+                    android:id="@+id/pb_apk"
+                    style="@style/FileProgress" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/horizontal_line"/>
+            <RelativeLayout
+                android:id="@+id/rl_allzip"
+                style="@style/FileMgr">
+                <TextView
+                    android:id="@+id/tv_zip"
+                    android:text="@string/filetype_zip"
+                    style="@style/FileType" />
+                <TextView
+                    android:id="@+id/tv_zip_size"
+                    android:text="200M"
+                    android:layout_alignBottom="@+id/tv_zip"
+                    android:layout_toRightOf="@id/tv_zip"
+                    style="@style/FileSize"/>
+                <ImageView
+                    android:id="@+id/iv_zip"
+                    style="@style/FileImg"
+                    android:visibility="gone"/>
+                <ProgressBar
+                    android:id="@+id/pb_zip"
+                    style="@style/FileProgress" />
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/horizontal_line"/>
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.common_dialog.MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/MainCheck"
+        style="@style/ButtonBorderlessColor"
+        android:id="@+id/btn_check"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/CustomCheck"
+        style="@style/ButtonBorderlessColor"
+        android:id="@+id/btn_custom_check"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/TimeCheck"
+        style="@style/ButtonBorderlessColor"
+        android:id="@+id/btn_timecheck"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/DayCheck"
+        style="@style/ButtonBorderlessColor"
+        android:id="@+id/btn_daycheck"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/BubbleCheck"
+        style="@style/ButtonBorderlessColor"
+        android:id="@+id/btn_bubblecheck"/>
+</LinearLayout>

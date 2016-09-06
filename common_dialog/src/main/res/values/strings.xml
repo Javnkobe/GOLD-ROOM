@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Common_Dialog</string>
+
+    <string name="MainCheck">选择对话框</string>
+    <string name="TimeCheck">时间选择对话框</string>
+    <string name="DayCheck">日期选择对话框</string>
+    <string name="BubbleCheck">泡泡窗口</string>
+    <string name="CustomCheck">自定义对话框</string>
+</resources>

@@ -1,0 +1,1 @@
+include ':app', ':readdbdata', ':mylogin', ':notificationdemo', ':common_dialog', ':activity_manager_demo', ':broadcast_receiver', ':singledemo'
